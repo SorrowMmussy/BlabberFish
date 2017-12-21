@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:BlabberFish"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid HorizontalAlignment="Right" Width="517" Height="319" VerticalAlignment="Top">
+        <Grid Margin="0,30,0,0" HorizontalAlignment="Left" Width="507" Height="279" VerticalAlignment="Top">
+            <DataGrid Name="DG_Countries"  HorizontalAlignment="Left" Height="279" VerticalAlignment="Top" Width="268" SelectionChanged="DataGrid_SelectionChanged" RenderTransformOrigin="0.48,0.521" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn  Header="Countries" Binding="{Binding}" />
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid HorizontalAlignment="Left" Height="279" Margin="273,0,0,0" VerticalAlignment="Top" Width="234"/>
+        </Grid>
+        <Label Content="Countries" HorizontalAlignment="Left" Margin="96,4,0,0" VerticalAlignment="Top" Width="64" Background="White"/>
+        <Label Content="Cities" HorizontalAlignment="Left" Margin="360,4,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
