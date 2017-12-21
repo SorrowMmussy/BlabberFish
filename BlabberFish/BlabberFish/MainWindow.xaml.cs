@@ -22,6 +22,7 @@ namespace BlabberFish
     {
         public MainWindow()
         {
+            //C# destytojas awesome
             InitializeComponent();
         }
     }
